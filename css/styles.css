@@ -1,0 +1,45 @@
+/* Custom styles */
+.container { max-width: 1100px; }
+.fade { transition: opacity 0.8s ease, transform 0.8s ease; }
+.slide-hidden { opacity: 0; }
+.slide-show { opacity: 1; }
+.btn { @apply inline-block px-5 py-2 rounded-lg font-semibold; }
+/* simple reset for dot/buttons */
+.slider-dot { width: 10px; height: 10px; border-radius: 9999px; }
+
+
+/* === Global site background === */
+body { background-color: #f5f7fa; }
+
+/* === HERO slider (fade) === */
+#hero { position: relative; }
+#hero .slides { position: relative; height: 80vh; overflow: hidden; }
+#hero .slide-layer { position: absolute; inset: 0; }
+#hero .hero-slide { transition: opacity 0.8s ease-in-out; }
+#hero .slide-hidden { opacity: 0; pointer-events: none; }
+#hero .slide-show { opacity: 1; }
+
+/* Overlay content that centers text/buttons over each slide */
+#hero .slide-content {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; color: #fff; padding: 0 1.5rem;
+  background: rgba(0,0,0,0.40);
+}
+
+/* Utility styles used within hero */
+#hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Optional button polish */
+#hero .slide-content a {
+  display: inline-block; padding: 0.75rem 1.25rem; border-radius: 0.5rem;
+  background: #0ea5e9; color: #fff; text-decoration: none;
+}
+#hero .slide-content a:hover { background: #0284c7; }
+
+/* Highlight active nav link */
+nav a.active {
+  color: #007BFF;
+  font-weight: bold;
+  border-bottom: 2px solid #007BFF;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Contact — YourCo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="css/styles.css" rel="stylesheet"/>
+<style>header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+body {
+}</style></head>
+<body class="antialiased text-gray-800 bg-gray-50 font-sans">
+<header class="bg-white shadow-sm">
+<nav class="bg-white shadow-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16">
+<div class="flex">
+<a class="flex-shrink-0 flex items-center text-xl font-bold text-gray-800" href="index.html">
+          YourCo
+        </a>
+</div>
+<div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+<a class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600" href="index.html">Home</a>
+<a class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600" href="services.html">Services</a>
+<a class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600" href="about.html">About</a>
+<a class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600" href="faq.html">FAQ</a>
+<a class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600 active" href="contact.html">Contact</a>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<main class="container mx-auto px-6 py-12">
+<h1 class="text-3xl font-bold text-center mb-6">Contact Us</h1>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white p-8 rounded-lg shadow reveal">
+<form action="#" class="grid gap-4" method="POST">
+<input class="border rounded px-4 py-2" name="name" placeholder="Full name" required=""/>
+<input class="border rounded px-4 py-2" name="email" placeholder="Email" required="" type="email"/>
+<input class="border rounded px-4 py-2" name="company" placeholder="Company (optional)"/>
+<textarea class="border rounded px-4 py-2 h-32" name="message" placeholder="How can we help?" required=""></textarea>
+<button class="bg-sky-600 text-white px-6 py-3 rounded-lg font-semibold">Send message</button>
+</form>
+</div>
+<aside class="space-y-6 reveal">
+<div class="bg-white p-6 rounded-lg shadow">
+<h3 class="font-semibold">Office</h3>
+<p class="mt-2 text-gray-600">123 Market Street<br/>City, State ZIP</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow">
+<h3 class="font-semibold">Hours</h3>
+<p class="mt-2 text-gray-600">Mon–Fri 9:00–17:00</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow">
+<h3 class="font-semibold">Email</h3>
+<p class="mt-2 text-gray-600">hello@yourco.example</p>
+</div>
+</aside>
+</div>
+</main>
+<footer class="bg-white border-t mt-12">
+<div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-600">© 2025 YourCo — All rights reserved.</p>
+<div class="flex gap-4 mt-4 md:mt-0">
+<a class="text-gray-500 hover:text-sky-600" href="#">Privacy</a>
+<a class="text-gray-500 hover:text-sky-600" href="#">Terms</a>
+</div>
+</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
